@@ -1,5 +1,5 @@
 {
-    "idf.port": "/dev/tty.usbserial-142240",
+    "idf.port": "/dev/tty.usbserial-142210",
     "files.associations": {
         "esp_lcd_ili9341.h": "c"
     },
@@ -7,5 +7,6 @@
     "C_Cpp.default.compilerPath": "/Users/danielblackburn/esp/esp-idf/tools/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-g++",
     "idf.espIdfPath": "/Users/danielblackburn/esp/v5.4.1/esp-idf",
     "idf.toolsPath": "/Users/danielblackburn/esp/esp-idf/tools",
-    "idf.pythonInstallPath": "/usr/local/bin/python"
+    "idf.pythonInstallPath": "/usr/local/bin/python",
+    "idf.currentSetup": "/Users/danielblackburn/esp/v5.4.1/esp-idf"
 }

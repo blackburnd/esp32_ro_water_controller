@@ -351,10 +351,17 @@ void app_main(void) {
     
     // Initialize LVGL
     lv_display_t *disp = app_lvgl_init(lcd_io, lcd_panel);
-    
+
     // Initialize touch
     esp_lcd_touch_handle_t tp = NULL;
     ESP_ERROR_CHECK(app_touch_init(&tp));
+
+    // Register touch with LVGL port
+    const lvgl_port_touch_cfg_t touch_cfg = {
+        .disp = disp,
+        .handle = tp,
+    };
+    lvgl_port_add_touch(&touch_cfg);
     
     // Initialize MQTT client
     mqtt_init();
@@ -368,6 +375,6 @@ void app_main(void) {
     vTaskDelay(pdMS_TO_TICKS(50));
     
     // Now turn on the backlight at full brightness
-    ESP_LOGI(LCD_TAG, "Turning on backlight to 100%");
+    ESP_LOGI(LCD_TAG, "Turning on backlight to 100%%");
     ESP_ERROR_CHECK(lcd_display_brightness_set(100));
 }

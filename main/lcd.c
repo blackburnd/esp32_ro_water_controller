@@ -147,7 +147,7 @@ esp_err_t app_lcd_init(esp_lcd_panel_io_handle_t *lcd_io, esp_lcd_panel_handle_t
 
     // Explicitly set the rotation values
     esp_lcd_panel_swap_xy(*lcd_panel, true);
-    esp_lcd_panel_mirror(*lcd_panel, LCD_MIRROR_X, LCD_MIRROR_Y);
+    esp_lcd_panel_mirror(*lcd_panel, false, false);
     esp_lcd_panel_disp_on_off(*lcd_panel, true);
 
     return r;

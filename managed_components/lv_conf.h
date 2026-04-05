@@ -366,7 +366,7 @@
  *-----------*/
 
 /** Enable log module */
-#define LV_USE_LOG 0
+#define LV_USE_LOG 1
 #if LV_USE_LOG
     /** Set value to one of the following levels of logging detail:
      *  - LV_LOG_LEVEL_TRACE    Log detailed information.
@@ -739,7 +739,7 @@
 
 #define LV_USE_IMAGEBUTTON     1
 
-#define LV_USE_KEYBOARD   1
+#define LV_USE_KEYBOARD   0
 
 #define LV_USE_LABEL      1
 #if LV_USE_LABEL
@@ -760,11 +760,11 @@
 
 #define LV_USE_MSGBOX     1
 
-#define LV_USE_ROLLER     1   /**< Requires: lv_label */
+#define LV_USE_ROLLER     0   /**< Requires: lv_label */
 
 #define LV_USE_SCALE      1
 
-#define LV_USE_SLIDER     1   /**< Requires: lv_bar */
+#define LV_USE_SLIDER     0   /**< Requires: lv_bar */
 
 #define LV_USE_SPAN       1
 #if LV_USE_SPAN
@@ -1270,7 +1270,7 @@
 #define LV_USE_ST7735        0
 #define LV_USE_ST7789        0
 #define LV_USE_ST7796        0
-#define LV_USE_ILI9341       0
+#define LV_USE_ILI9341       1
 #define LV_USE_FT81X         0
 
 #if (LV_USE_ST7735 | LV_USE_ST7789 | LV_USE_ST7796 | LV_USE_ILI9341)
