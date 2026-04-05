@@ -11,12 +11,10 @@
 #include "mqtt_client.h"
 #include "mqtt_relay_client.h"
 #include "freertos/event_groups.h"
+#include "secrets.h"
 
 static const char *TAG = "MQTT_RO_WATER_VALVE";
 
-// WiFi configuration - REPLACE WITH YOUR NETWORK CREDENTIALS
-#define WIFI_SSID "Sanctuary"
-#define WIFI_PASSWORD "***"
 #define WIFI_MAXIMUM_RETRY 5
 
 // MQTT broker information
